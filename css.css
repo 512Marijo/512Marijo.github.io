@@ -1,0 +1,9 @@
+.jumbotron {
+min-height: 600px;
+background-image: url('coffee_1.jpg');
+background-size: cover;
+background-attachment: fixed;
+}
+
+body { padding-top: 70px;
+        text: black;}
