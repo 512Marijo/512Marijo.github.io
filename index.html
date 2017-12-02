@@ -1,94 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Coffee</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Coffee lovers</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="center">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
-</nav>
-
-  <div class="jumbotron text-center">
-    <h1>It's coffee o'clock!</h1>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+<!--Navigation -->
+<header>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+          <span class="sr-only"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#featured"><h1>Coffee Lovers<span class="subhead"></span></h1></a>
+      </div><!-- navbar-header -->
+      <div class="collapse navbar-collapse" id="collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#type">Coffee</a></li>
+          <li><a href="#coffeshops">Coffeeshops</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- collapse-->
+    </div><!-- container -->
+  </nav>
 
+  <!--jumbotron -->
+
+  <div class="jumbotron" id="featured">
+    <div class="container title">
+      <h2>It's coffee o'clock!</h2>
     </div>
   </div>
-  <div class="container">
-    <div class="container-fluid">
-      <h2>Types of coffee</h2>
-      <ul>
-      <li>Espresso</li>
-      <li>Double Espresso</li>
-      <li>Short Macchiato</li>
-      <li>Long Macchiato</li>
-      <li>Ristretto</li>
-      <li>Long Black</li>
-      <li>Café Latte</li>
-      <li>Cappuccino</li>
-      <li>Flat White</li>
-      <li>Piccolo Latte</li>
-      <li>Mocha</li>
-      <li>Affogato</li>
-    </ul>
-    </div>
+</header>
+
+<!--page: types of coffee -->
+    <div class="page" id="type">
+      <div class="content container">
+        <h2>Types of coffee</h2>
+        <div class="row">
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 1.svg" alt="Icon">
+            <h3>Expresso</h3>
+            <p>The espresso is the foundation and the most important part to every espresso based drink.</p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 2.svg" alt="Icon">
+            <h3>Double Espresso</h3>
+            <p>A double espresso is just that, two espresso shots in one cup. </p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 3.svg" alt="Icon">
+            <h3>Macchiato</h3>
+            <p> A macchiato is an espresso coffee with a small amount of milk, usually foamed.</p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 4.svg" alt="Icon">
+            <h3>Americano</h3>
+            <p>An Americano is hot water with an espresso shot extracted on top of the hot water.</p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 5.svg" alt="Icon">
+            <h3>Latte</h3>
+            <p>A café latte, or “latte” for short, is an espresso based drink with steamed milk and micro-foam added to the coffee.</p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 6.svg" alt="Icon">
+            <h3>Cappuccino</h3>
+            <p>A cappuccino is similar to a latte. However the key difference between a latte and cappuccino is that a cappuccino has more foam and chocolate placed on top of the drink.</p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 7.svg" alt="Icon">
+            <h3>Mocha</h3>
+            <p>A mocha is a mix between a cappuccino and a hot chocolate. It is made by putting mixing chocolate powder with an espresso shot and then adding steamed milk and micro-foam into the beverage. </p>
+          </article>
+
+          <article class="type col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 8.svg" alt="Icon">
+            <h3>Espresso con panna</h3>
+            <p>Espresso con panna is a single or double shot of espresso topped with whipped cream.</p>
+          </article>
+
+          <article class="type service col-md-4 col-sm-6 col-xs-12">
+            <img class="icon" src="ativo 9.svg" alt="Icon">
+            <h3>Caramel macchiato</h3>
+            <p>A caramel macchiato is an espresso coffee with a small amount of milk, usually foamed and caramel.</p>
+          </article>
+        </div><!--row -->
+      </div><!--content container -->
+    </div><!--types -->
+
+
+
+<!--page: coffeshops near you -->
+    <div class="page" id="coffeshops">
+      <div class="content container">
+        <h2>Need that extra kick?</h2>
+        <h2>Here are some coffeshops near you</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9518.310699408068!2d-1.470025602017713!3d53.38660555494672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scoffeshops!5e0!3m2!1sen!2suk!4v1512167417927" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
   </div>
+ </div>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 1</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 2</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
-      </div>
-      <div class="col-sm-4">
-        <h3>Column 3</h3>
-        <p>Lorem ipsum dolor..</p>
-        <p>Ut enim ad..</p>
-      </div>
-    </div>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="./js.js"></script>
-</body>
+<!--About Us -->
+    <div class="main">
+      <div class="page" id="about">
+        <div class="content container">
 
-</html>
+            <h2>About Us</h2>
+
+
+        </div><!-- content container-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+            <img class="img-circle" src="sofia.jpg" alt="photo of sofia">
+            <h3>Maria Santos</h3>
+            <p>Hi, I'm Maria! I'm a Graphic Design student that enjoys a good cup of coffee. </p>
+          </div><!-- -->
+            <div class="col-sm-6">
+            <img class="img-circle" src="maria.jpg" alt="photo of sofia">
+            <h3>Mary Jo Lozano</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+          </div><!-- -->
+          <div class="col-sm-12" id="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+</div>
+          </div><!--row-->
+        </div><!--container-->
+      </div><!-- about-->
+    </div><!--main -->
+
+
+<!--contact -->
+    <div class="page" id="contact">
+      <div class="content container">
+        <div class="container">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+        <hgroup>
+          <h4>
+            Subscribe for
+             <select class="frecuency">
+                 <option value="0">daily</option>
+                 <option value="1" selected>weekly</option>
+                 <option value="2">monthly</option>
+             </select>
+            newsletter
+          </h4>
+         </hgroup>
+    	 <div class="well">
+             <form action="#">
+              <div class="input-group">
+                 <input class="btn btn-lg" name="email" id="email" type="email" placeholder="Your Email" required>
+                 <button class="btn btn-info btn-lg" type="submit">Submit</button>
+              </div>
+             </form>
+    	 </div>
+         <small class="promise"><em>We won't send spam.</em></small>
+		</div>
+	</div>
+</div>
+
+      </div><!--container -->
+    </div><!--contact -->
+
+
+<!--subscribe -->
+
+
+
+
+
+<!--footer -->
+    <footer>
+      <div class="content container-fluid">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>Call us at <span class="phone">888-555-1212</span></p>
+            <p>All contents &copy; 2017 <a href="http://Cofeelovers.com">Coffee Lovers</a>. All rights reserved.</p>
+          </div><!--col-sm-6 -->
+          <div class="col-sm-6">
+            <nav class="navbar navbar-default" role="navigation">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </nav>
+          </div><!--col-sm-6 -->
+        </div><!--row -->
+      </div><!--content container -->
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js.js"></script>
+    </body>
+    </html>
